@@ -33,7 +33,32 @@ Before we start building, let's take a quick stroll down how the heck this thing
 
 Finding the point where two lines intersect is easy, in fact the math looks like this:
 
-code and formatting here
+```
+    // Adapted from the nice function seen here :)
+    // http://flassari.is/2008/11/line-line-intersection-in-cplusplus/
+    
+    // Store the values for fast access and easy
+    // equations-to-code conversion
+    float x1 = line1Start.x;
+    float x2 = line1End.x;
+    float x3 = line2Start.x;
+    float x4 = line2End.x;
+    
+    float y1 = line1Start.y;
+    float y2 = line1End.y;
+    float y3 = line2Start.y;
+    float y4 = line2End.y;
+    
+    float d = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);
+    // If d is zero, there is no intersection
+    if (d == 0) return;
+    
+    // Get the x and y
+    float pre = (x1*y2 - y1*x2);
+    float post = (x3*y4 - y3*x4);
+    float x = ( pre * (x3 - x4) - (x1 - x2) * post ) / d;
+    float y = ( pre * (y3 - y4) - (y1 - y2) * post ) / d;
+```
 We don't need to see where the two lines meet to know where they meet. With our naked eye this is true, but the computer can also remember and record where those points are, which allow it to recreate the path of the intersection of the two lines. It is important to note that only some part of each line needs to be visible, and if multiple parts of the same line are seen, that is okay too!
 
 
