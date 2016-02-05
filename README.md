@@ -23,7 +23,7 @@ I will outline the design as well as the steps for recreation (even though that 
 
 3D files are both included here and on Thingiverse: http://www.thingiverse.com/thing:1318763
 
-##Step 1: How it works
+##How it works
 
 Before we start building, let's take a quick stroll down how the heck this thing is going to work. It takes everyone a moment or two to visualize what is going to happen and how it is going to work, but with some visual aids, I have a feeling this will make sense quite quickly.
 
