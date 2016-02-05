@@ -50,3 +50,15 @@ Placing the lasers rotationally 90º apart, so as to create one quadrant of an X
 ##Tilt Sensing
 
 You might be wondering if there is anything else we can sense by seeing these laser lines. We get X,Y coordinates from their intersection, we get Ø from the line between the lines, and we can also get some information about the tilt of the pen... occasionally. By measuring the angle between the two found lines, we can determine a tilt along that axis. To be accurate about tilt, we could try and used dashed line lasers or a third laser to act as a tilt reference, but in short, I thought it kind of need that we can get at least some information about this, and if the artist so chooses, she can decide to draw with the pen in a specific orientation to maximize tilt information.
+
+##License
+
+Copyright (c) 2015 Jonathan Bobrow
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
